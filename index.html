@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>BIGHEARTS</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header class="header">
+          <a class="header__logo" href="#"
+            ><img src="img/svg/logo.svg" alt="BIGHEARTS."
+          /></a>
+          <ul class="header__mobile-menu">
+            <li class="header__mobile-item">
+              <button class="header__mobile-btn" type="button">
+                <span class="visually-hidden">Телефон.</span
+                ><svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="40"
+                  height="40"
+                >
+                  <use href="img/sprite.svg#call"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header__mobile-item">
+              <button
+                class="header__mobile-btn header__mobile-btn--overlook"
+                type="button"
+              >
+                <span class="visually-hidden">Уведомления.</span
+                ><svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="40"
+                  height="40"
+                >
+                  <use href="img/sprite.svg#bell"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header__mobile-item">
+              <button class="header__mobile-btn" type="button">
+                <span class="visually-hidden">Меню.</span
+                ><svg
+                  class="icon icon--active"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="40"
+                  height="40"
+                >
+                  <use href="img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </header>
+        <aside class="sidebar">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon icon--active"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#home"></use></svg
+                  ><span>Главная</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#profile"></use></svg
+                  ><span>Профиль</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#services"></use></svg
+                  ><span>Услуги</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#event"></use></svg
+                  ><span>Мероприятия</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#doc"></use></svg
+                  ><span>Мои документы</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#faq"></use></svg
+                  ><span>FAQ</span></a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"
+                  ><svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="30"
+                    height="30"
+                  >
+                    <use href="img/sprite.svg#bell"></use></svg
+                  ><span>Мои уведомления</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__footer">
+            <div class="hotline">
+              <strong class="hotline__title">Горячая линия</strong>
+              <a class="hotline__phone" href="tel:88003505785"
+                >8 800 350 57 85</a
+              >
+              <svg
+                class="icon icon--active"
+                aria-hidden="true"
+                focusable="false"
+                width="36"
+                height="36"
+              >
+                <use href="img/sprite.svg#call"></use>
+              </svg>
+            </div>
+            <div class="error-report">
+              <button class="error-report__btn">
+                <svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="30"
+                  height="30"
+                >
+                  <use href="img/sprite.svg#info"></use>
+                </svg>
+                <span>Сообщить об ошибке</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+        <main class="main">
+          <h1 class="visually-hidden">Главная</h1>
+          <div class="main__wrapper">
+            <section class="info">
+              <div class="user">
+                <div class="user__avatar">
+                  <img
+                    src="img/avatar.png"
+                    alt="Avatar."
+                    width="40"
+                    height="40"
+                  />
+                  <span>Василина Н.</span>
+                </div>
+                <div class="user__city">
+                  <span>Ваш регион:</span><b>Москва</b>
+                  <svg
+                    class="icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="36"
+                    height="36"
+                  >
+                    <use href="img/sprite.svg#map-pin"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="info__inner">
+                <div class="help">
+                  <h2 class="help__title">Как вам помочь?</h2>
+                  <ul class="help__list">
+                    <li class="help__item">
+                      <button class="btn btn--help" type="button">
+                        Нужна финансовая поддержка
+                      </button>
+                    </li>
+                    <li class="help__item">
+                      <button class="btn btn--help" type="button">
+                        Нужна моральная поддержка
+                      </button>
+                    </li>
+                    <li class="help__item">
+                      <button class="btn btn--help" type="button">
+                        Хочу поговорить
+                      </button>
+                    </li>
+                    <li class="help__item">
+                      <button class="btn btn--help" type="button">
+                        Хочу на мероприятие
+                      </button>
+                    </li>
+                    <li class="help__item">
+                      <button class="btn btn--help" type="button">
+                        Нужна мед. помощь
+                      </button>
+                    </li>
+                  </ul>
+                  <a class="link link--help" href="#">Связаться с поддержкой</a>
+                </div>
+                <div class="story">
+                  <ul class="story__list">
+                    <li class="story__item">
+                      <a class="story__link story__link--chablis" href="#">
+                        <img
+                          src="img/story-1.png"
+                          alt="Сердце."
+                          width="134"
+                          height="134"
+                        />
+                        <p>Как получить помощь?</p>
+                      </a>
+                    </li>
+                    <li class="story__item">
+                      <a class="story__link story__link--tea-rose" href="#">
+                        <img
+                          src="img/story-2.png"
+                          alt="Запись."
+                          width="134"
+                          height="134"
+                        />
+                        <p>Как записаться на мероприятие?</p>
+                      </a>
+                    </li>
+                    <li class="story__item">
+                      <a class="story__link story__link--dodger-blue" href="#">
+                        <img
+                          src="img/story-3.png"
+                          alt="Фото на документ."
+                          width="134"
+                          height="134"
+                        />
+                        <p>Какие документы нужно собрать?</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="requests">
+              <div class="requests__inner">
+                <div class="requests__header">
+                  <h2 class="requests__title">Ваши заявки</h2>
+                  <a class="link" href="#">Все заявки</a>
+                </div>
+                <div class="requests__tabs-wrapper">
+                  <ul class="requests__tabs-list">
+                    <li class="requests__tabs-item requests__tabs-item--active">
+                      <button class="btn btn--tab active" type="button">
+                        Все
+                      </button>
+                    </li>
+                    <li class="requests__tabs-item">
+                      <button class="btn btn--tab" type="button">
+                        Одобренные
+                      </button>
+                    </li>
+                    <li class="requests__tabs-item">
+                      <button class="btn btn--tab" type="button">
+                        В обработке
+                      </button>
+                    </li>
+                    <li class="requests__tabs-item">
+                      <button class="btn btn--tab" type="button">
+                        Отклоненные
+                      </button>
+                    </li>
+                    <li class="requests__tabs-item">
+                      <button class="btn btn--tab" type="button">
+                        Черновики
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="requests__list">
+                <li class="requests__item">
+                  <a class="requests__link" href="#">
+                    <div class="requests__item-header">
+                      <span class="tag tag--approved">Одобрено</span>
+                      <svg
+                        class="icon icon--approved"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="32"
+                        height="32"
+                      >
+                        <use href="img/sprite.svg#services"></use>
+                      </svg>
+                    </div>
+                    <h3 class="requests__item-title">Обследование</h3>
+                    <div class="requests__item-buttons">
+                      <button type="button" class="btn btn--dashboard">
+                        Памятка
+                      </button>
+                      <button type="button" class="link">Отменить</button>
+                    </div>
+                  </a>
+                </li>
+                <li class="requests__item">
+                  <a class="requests__link" href="#">
+                    <div class="requests__item-header">
+                      <span class="tag tag--in-process">В обработке</span>
+                      <svg
+                        class="icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="32"
+                        height="32"
+                      >
+                        <use href="img/sprite.svg#services"></use>
+                      </svg>
+                    </div>
+                    <h3 class="requests__item-title">Второе мнение</h3>
+                    <div class="requests__item-buttons">
+                      <button type="button" class="btn btn--dashboard">
+                        Памятка
+                      </button>
+                      <button type="button" class="link">Отменить</button>
+                    </div>
+                  </a>
+                </li>
+                <li class="requests__item">
+                  <a class="requests__link requests__link--help" href="#">
+                    <h3 class="requests__item-title">
+                      Оставьте заявку <br />
+                      на помощь!
+                    </h3>
+                    <div class="requests__item-buttons">
+                      <button type="button" class="btn btn--dashboard-services">
+                        Все услуги
+                      </button>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <article class="events">
+            <div class="events__header">
+              <h2 class="events__title">События для вас</h2>
+              <button class="link" type="button">Смотреть все</button>
+            </div>
+          </article>
+        </main>
+        <footer class="footer">
+          <a class="link" href="#">Основной сайт</a>
+          <span class="footer__copyright">© 2019–2025 БФ «Онкологика»</span>
+        </footer>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
