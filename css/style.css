@@ -1020,6 +1020,10 @@ button,
     scrollbar-width: none;
   }
 
+  .events {
+    padding: 16px 0;
+  }
+
   .footer {
     padding: 20px 0;
   }
