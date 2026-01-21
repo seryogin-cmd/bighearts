@@ -1,0 +1,22 @@
+.tag {
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 132%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  border-radius: 26px;
+  padding: 6px 12px;
+
+  &--approved {
+    color: $color-islamic-green;
+    background-color: $color-tara;
+  }
+
+  &--in-process {
+    color: $color-turbo;
+    background-color: $color-corn-silk;
+  }
+}

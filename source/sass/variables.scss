@@ -1,0 +1,66 @@
+// Default
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
+
+// Fills
+
+$color-international-orange: #ff5100;
+$color-islamic-green: #02aa03;
+$color-turbo: #f6d214;
+$color-dodger-blue: #0986eb;
+$color-torch-red: #ff0038;
+$color-tea-rose: #ff85c0;
+$color-amethyst: #924cd6;
+$color-white-smoke: #efefef;
+$color-floral-white: #fbfaf8;
+$color-chablis: #ffe7db;
+$color-tara: #dcf3dc;
+$color-corn-silk: #fef9de;
+$color-lavender-blush: #ffeef6;
+$color-classic-rose: #ffc2df;
+$color-dark-gray: #a3a3a3;
+$color-pattens-blue: #ddeefc;
+$color-light-salmon: #ffa880;
+
+// Text
+
+$color-black-russian: #181d27;
+$color-bright-grey: #535862;
+$color-grey: #878787;
+
+// Gradient
+
+$black-to-right: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 0.75) 0%,
+  rgba(0, 0, 0, 0) 75%
+);
+
+// Typography
+
+$fz-default: 16px;
+$ff-placeholder: "Normalidad", "Tahoma", sans-serif;
+
+// Animation
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-600: 0.6s $tf-default;
+
+// Viewports
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+
+// Retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

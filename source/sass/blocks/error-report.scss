@@ -1,0 +1,18 @@
+.error-report {
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 128%;
+    color: $color-grey;
+  }
+}

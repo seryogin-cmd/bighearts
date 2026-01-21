@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px;
+  gap: 8px;
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 132%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-grey;
+    opacity: 0.5;
+  }
+
+  @include vp-1023 {
+    padding: 20px 0;
+  }
+
+  @include vp-767 {
+    padding: 56px 0 20px;
+  }
+}

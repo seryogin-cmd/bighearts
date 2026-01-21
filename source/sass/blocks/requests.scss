@@ -1,0 +1,137 @@
+.requests {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 132%;
+    color: $color-black-russian;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  &__tabs-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  &__tabs-item {
+    flex-shrink: 0;
+  }
+
+  &__tabs-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 12px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    min-height: 170px;
+    padding: 16px;
+    border: 4px solid $color-white-smoke;
+    border-radius: 32px;
+    height: 100%;
+    transition: $trans-default;
+
+    @include hover-focus {
+      border-color: $color-international-orange;
+    }
+
+    &--help {
+      background-color: $color-classic-rose;
+
+      h3 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 132%;
+        color: $color-torch-red;
+      }
+
+      @include hover-focus {
+        border-color: $color-tea-rose;
+      }
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 250%;
+    color: $color-black-russian;
+  }
+
+  &__item-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @include vp-1023 {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 32px 0;
+    overflow: hidden;
+
+    &__header {
+      padding: 0 20px;
+    }
+
+    &__list {
+      padding: 0 20px;
+    }
+
+    &__tabs-list {
+      min-width: max-content;
+      flex-wrap: nowrap;
+      margin-left: 20px;
+    }
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__tabs-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__tabs-wrapper {
+      scrollbar-width: none;
+    }
+  }
+
+  @include vp-767 {
+    gap: 16px;
+    padding: 42px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 20px 24px 12px;
+  gap: 15px;
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @include vp-1023 {
+    display: none;
+  }
+}

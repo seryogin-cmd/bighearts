@@ -1,0 +1,72 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 128%;
+  border: none;
+  background-color: transparent;
+  border-radius: 100px;
+  color: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: $trans-default;
+
+  &--help {
+    padding: 8px 16px;
+    color: $color-default-white;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.24);
+
+    @include hover-focus {
+      color: $color-international-orange;
+      backdrop-filter: blur(24px);
+      background: $color-default-white;
+    }
+  }
+
+  &--tab {
+    padding: 8px 16px;
+    color: $color-bright-grey;
+
+    &.active {
+      background-color: $color-white-smoke;
+      pointer-events: none;
+    }
+
+    @include hover-focus {
+      color: $color-international-orange;
+      backdrop-filter: blur(24px);
+      background: $color-default-white;
+    }
+  }
+
+  &--dashboard {
+    padding: 12px 24px;
+    background-color: $color-chablis;
+    color: $color-international-orange;
+
+    @include hover-focus {
+      color: $color-default-white;
+      background-color: $color-international-orange;
+    }
+
+    &::disabled {
+      color: $color-light-salmon;
+      background-color: $color-chablis;
+    }
+  }
+
+  &--dashboard-services {
+    padding: 12px 24px;
+    background-color: $color-lavender-blush;
+    color: $color-torch-red;
+
+    @include hover-focus {
+      color: $color-default-white;
+      background-color: $color-torch-red;
+    }
+  }
+}

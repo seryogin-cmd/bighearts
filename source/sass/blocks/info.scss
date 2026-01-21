@@ -1,0 +1,30 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background-color: $color-default-white;
+  backdrop-filter: blur(100px);
+  border: 1px solid $color-white-smoke;
+  border-radius: 40px 40px 48px 48px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+    gap: 12px;
+  }
+
+  @include vp-1023 {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  @include vp-767 {
+    gap: 24px;
+
+    &__inner {
+      gap: 20px;
+    }
+  }
+}

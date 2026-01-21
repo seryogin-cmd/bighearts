@@ -1,0 +1,24 @@
+.events {
+  padding: 24px 14px 0 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 132%;
+    color: $color-black-russian;
+  }
+
+  @include vp-1439 {
+    padding: 32px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 32px;
+  grid-row: 1 / 4;
+  grid-column: 2;
+  padding: 16px;
+  background-color: $color-floral-white;
+  border: 1px solid $color-white-smoke;
+  border-radius: 56px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    height: fit-content;
+  }
+
+  @include vp-1023 {
+    grid-row: auto;
+    grid-column: auto;
+    border: none;
+    padding: 0;
+  }
+
+  @include vp-1439 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}

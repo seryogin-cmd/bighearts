@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+ 
+  .sidebar {
+    grid-column: 1;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}

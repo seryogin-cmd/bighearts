@@ -1,0 +1,33 @@
+.link {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(135, 135, 135, 0.24);
+  color: $color-grey;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    text-decoration-color 0.3s ease;
+
+  @include hover-focus {
+    color: $color-international-orange;
+    text-decoration-color: $color-international-orange;
+  }
+
+  &--help {
+    opacity: 0.8;
+    color: $color-default-white;
+    text-decoration-color: rgba(255, 255, 255, 0.24);
+
+    @include hover-focus {
+      color: $color-default-white;
+      text-decoration-color: $color-default-white;
+    }
+  }
+}

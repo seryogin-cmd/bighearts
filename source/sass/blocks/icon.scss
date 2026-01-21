@@ -1,0 +1,14 @@
+.icon {
+  --icon-bg: #{$color-white-smoke};
+  --icon-fg: #{$color-dark-gray};
+
+  &--active {
+    --icon-bg: #{$color-chablis};
+    --icon-fg: #{$color-international-orange};
+  }
+
+  &--approved {
+    --icon-bg: #{$color-pattens-blue};
+    --icon-fg: #{$color-dodger-blue};
+  }
+}
