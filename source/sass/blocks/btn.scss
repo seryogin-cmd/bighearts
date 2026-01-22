@@ -37,9 +37,7 @@
     }
 
     @include hover-focus {
-      color: $color-international-orange;
-      backdrop-filter: blur(24px);
-      background: $color-default-white;
+      background-color: $color-white-smoke;
     }
   }
 
