@@ -950,8 +950,6 @@ button,
   .wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
     padding: 0;
   }
 
