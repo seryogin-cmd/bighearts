@@ -194,7 +194,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1940px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -568,9 +568,7 @@ button,
 }
 
 .btn--tab.focus-visible:focus {
-  color: #ff5100;
-  backdrop-filter: blur(24px);
-  background: #ffffff;
+  background-color: #efefef;
 }
 
 .btn--dashboard {
@@ -1128,9 +1126,7 @@ button,
   }
 
   .btn--tab:hover:not(.focus-visible) {
-    color: #ff5100;
-    backdrop-filter: blur(24px);
-    background: #ffffff;
+    background-color: #efefef;
   }
 
   .btn--dashboard:hover:not(.focus-visible) {
